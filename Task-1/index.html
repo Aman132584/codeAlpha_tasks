@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listly Help — FAQ Chatbot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="lc-card">
+    <div class="lc-header">
+      <div class="lc-brand">
+        <span class="lc-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M5 13l4 4L19 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <div>
+          <div class="lc-title">Listly Help</div>
+          <div class="lc-subtitle">Ask about pricing, sync, sharing &amp; more</div>
+        </div>
+      </div>
+      <button class="lc-reset" id="resetBtn" type="button">Reset</button>
+    </div>
+
+    <div class="lc-messages" id="messages">
+      <!-- messages get appended here by script.js -->
+    </div>
+
+    <form class="lc-inputRow" id="chatForm">
+      <input class="lc-input" id="chatInput" type="text" placeholder="Type a question..." autocomplete="off">
+      <button class="lc-send" type="submit" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M4 12h15M13 6l6 6-6 6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </form>
+
+    <div class="lc-footnote">
+      Sends your question to the backend, which matches it against faqs.csv and returns the best answer.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
